@@ -51,13 +51,14 @@ puzzleItemsMobile.forEach(function (element) {
   });
 });
 
+var audio = new Audio('./Tu-Aj-Menu-Nede-Nede-Aa-Len-DePaglaSongs.mp3');
+var playPromise = audio.play();
 
-
-var x = document.getElementById("myAudio"); 
-function playAudio() { 
-  x.play(); 
-} 
-playAudio()
+// var x = document.getElementById("myAudio"); 
+// function playAudio() { 
+//   x.play(); 
+// } 
+// playAudio()
 var puzzleItemsDesktop = document.querySelectorAll('#puz i');
 puzzleItemsDesktop.forEach(function (element) {
   element.addEventListener('click', function () {
