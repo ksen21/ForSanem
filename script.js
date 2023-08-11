@@ -51,9 +51,11 @@ puzzleItemsMobile.forEach(function (element) {
   });
 });
 
-var audio = new Audio('./Tu-Aj-Menu-Nede-Nede-Aa-Len-DePaglaSongs.mp3');
-var playPromise = audio.play();
-
+const playing = () => {
+  var audio = new Audio('./Tu-Aj-Menu-Nede-Nede-Aa-Len-DePaglaSongs.mp3');
+  var playPromise = audio.play();
+}
+document.querySelector('.btn').addEventListener('click',playing)
 // var x = document.getElementById("myAudio"); 
 // function playAudio() { 
 //   x.play(); 
